@@ -14,7 +14,7 @@ for storing files. There are a lot of practical applications for this workflow w
 ## Features
 
 ```
-Input samples for all operations are added in `/samples/`
+Input samples for all operations are added in /samples/
 ```
 
 1. Merge PDF: Merge any number of PDF files. 
