@@ -144,3 +144,7 @@ for storing files. There are a lot of practical applications for this workflow w
   "file_name": "Watermarked.pdf"
 }
 ```
+
+## Flow Diagram
+
+![img.png](screenshots/img.png)
