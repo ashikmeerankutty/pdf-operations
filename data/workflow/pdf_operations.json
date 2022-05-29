@@ -65,8 +65,8 @@
                   "taskReferenceName": "watermark_pdf_ref",
                   "inputParameters": {
                     "input_files": "${workflow.input.operation.input_files}",
-                    "watermark_type": "${workflow.input.watermark_type}",
-                    "watermark_data": "${workflow.input.watermark_data}"
+                    "watermark_type": "$workflow.input.operation.watermark_type}",
+                    "watermark_data": "${workflow.input.operation.watermark_data}"
                   },
                   "type": "SIMPLE",
                   "decisionCases": {},
