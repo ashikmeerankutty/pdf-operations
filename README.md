@@ -15,7 +15,7 @@ for storing files. There are a lot of practical applications for this workflow w
 
 1. Merge PDF: Merge any number of PDF files. 
 
-### Input
+Input
 
 ```json
 {
@@ -30,7 +30,7 @@ for storing files. There are a lot of practical applications for this workflow w
 }
 ```
 
-### Output
+Output
 
 ```json
 {
@@ -41,7 +41,7 @@ for storing files. There are a lot of practical applications for this workflow w
 
 2. Compress PDF: Compress PDF files (supports images).
 
-### Input
+Input
 
 ```json
 {
@@ -55,7 +55,7 @@ for storing files. There are a lot of practical applications for this workflow w
 }
 ```
 
-### Output
+Output
 
 ```json
 {
@@ -66,7 +66,7 @@ for storing files. There are a lot of practical applications for this workflow w
 
 3. Extract PDF: Extract text from PDF files.
 
-### Input
+Input
 
 ```json
 {
@@ -80,7 +80,7 @@ for storing files. There are a lot of practical applications for this workflow w
 }
 ```
 
-### Output
+Output
 
 ```json
 {
@@ -92,7 +92,7 @@ for storing files. There are a lot of practical applications for this workflow w
 4. Watermark PDF: Extract text from PDF files.
 
 
-### Input
+Input
 
 ```json
 {
@@ -108,7 +108,7 @@ for storing files. There are a lot of practical applications for this workflow w
 }
 ```
 
-### Output
+Output
 
 ```json
 {
@@ -119,7 +119,7 @@ for storing files. There are a lot of practical applications for this workflow w
 
 5. Convert Image(s) to PDF: Convert image(s) to a single PDF file.
 
-### Input
+Input
 
 ```json
 {
@@ -136,7 +136,7 @@ for storing files. There are a lot of practical applications for this workflow w
 }
 ```
 
-### Output
+Output
 
 ```json
 {
