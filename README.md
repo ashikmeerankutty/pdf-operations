@@ -162,7 +162,7 @@ Input and output of a successful execution of a PDF merge operation
 
 ## Running locally
 
-Add your application API_KEY and SECRET Key to `src/main/resources/application.properties` 
+Add your application API_KEY and API_SECRET Key to `src/main/resources/application.properties` 
 
 Build project
 
