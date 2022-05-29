@@ -159,6 +159,23 @@ Successful execution of a PDF merge operation
 
 Input and output of a successful execution of a PDF merge operation
 
+
+## Running locally
+
+Add your application API_KEY and SECRET Key to `src/main/resources/application.properties` 
+
+Build project
+
+```shell
+./gradlew build
+```
+
+Run Project
+
+```shell
+./gradlew bootRun
+```
+
 ## Future Scope
 
 - Add support for more operations like split, create, etc.
