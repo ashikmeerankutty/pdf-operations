@@ -1,0 +1,25 @@
+{
+  "createTime": 1653735828282,
+  "updateTime": 1653800600581,
+  "createdBy": "",
+  "updatedBy": "",
+  "name": "merge_pdf",
+  "retryCount": 3,
+  "timeoutSeconds": 5,
+  "inputKeys": [],
+  "outputKeys": [
+    "output_file",
+    "file_name"
+  ],
+  "timeoutPolicy": "TIME_OUT_WF",
+  "retryLogic": "FIXED",
+  "retryDelaySeconds": 5,
+  "responseTimeoutSeconds": 5,
+  "concurrentExecLimit": 100,
+  "inputTemplate": {},
+  "rateLimitPerFrequency": 50,
+  "rateLimitFrequencyInSeconds": 30,
+  "ownerEmail": "ashik9591@gmail.com",
+  "pollTimeoutSeconds": 5,
+  "backoffScaleFactor": 1
+}

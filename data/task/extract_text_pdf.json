@@ -1,0 +1,24 @@
+{
+  "createTime": 1653802951874,
+  "updateTime": 1653806701875,
+  "createdBy": "",
+  "updatedBy": "",
+  "name": "extract_text_pdf",
+  "retryCount": 3,
+  "timeoutSeconds": 25,
+  "inputKeys": [],
+  "outputKeys": [
+    "extracted_text"
+  ],
+  "timeoutPolicy": "TIME_OUT_WF",
+  "retryLogic": "FIXED",
+  "retryDelaySeconds": 5,
+  "responseTimeoutSeconds": 5,
+  "concurrentExecLimit": 100,
+  "inputTemplate": {},
+  "rateLimitPerFrequency": 50,
+  "rateLimitFrequencyInSeconds": 30,
+  "ownerEmail": "ashik9591@gmail.com",
+  "pollTimeoutSeconds": 5,
+  "backoffScaleFactor": 1
+}

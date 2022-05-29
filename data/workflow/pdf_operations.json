@@ -1,0 +1,179 @@
+{
+  "updateTime": 1653829158664,
+  "name": "pdf_operations",
+  "description": "PDF operations",
+  "version": 15,
+  "tasks": [
+    {
+      "name": "pdf_operation_types",
+      "taskReferenceName": "pdf_operation_types_ref",
+      "inputParameters": {
+        "operation": "${workflow.input.type}"
+      },
+      "type": "SWITCH",
+      "decisionCases": {
+        "OPERATIONS": [
+          {
+            "name": "pdf_commands",
+            "taskReferenceName": "pdf_commands_ref",
+            "inputParameters": {
+              "command": "${workflow.input.operation.command}"
+            },
+            "type": "SWITCH",
+            "decisionCases": {
+              "MERGE": [
+                {
+                  "name": "merge_pdf",
+                  "taskReferenceName": "merge_pdf_ref",
+                  "inputParameters": {
+                    "input_files": "${workflow.input.operation.input_files}"
+                  },
+                  "type": "SIMPLE",
+                  "decisionCases": {},
+                  "defaultCase": [],
+                  "forkTasks": [],
+                  "startDelay": 0,
+                  "joinOn": [],
+                  "optional": false,
+                  "defaultExclusiveJoinTask": [],
+                  "asyncComplete": false,
+                  "loopOver": []
+                }
+              ],
+              "COMPRESS": [
+                {
+                  "name": "compress_pdf",
+                  "taskReferenceName": "compress_pdf_ref",
+                  "inputParameters": {
+                    "input_files": "${workflow.input.operation.input_files}"
+                  },
+                  "type": "SIMPLE",
+                  "decisionCases": {},
+                  "defaultCase": [],
+                  "forkTasks": [],
+                  "startDelay": 0,
+                  "joinOn": [],
+                  "optional": false,
+                  "defaultExclusiveJoinTask": [],
+                  "asyncComplete": false,
+                  "loopOver": []
+                }
+              ],
+              "WATERMARK": [
+                {
+                  "name": "watermark_pdf",
+                  "taskReferenceName": "watermark_pdf_ref",
+                  "inputParameters": {
+                    "input_files": "${workflow.input.operation.input_files}",
+                    "watermark_type": "${workflow.input.watermark_type}",
+                    "watermark_data": "${workflow.input.watermark_data}"
+                  },
+                  "type": "SIMPLE",
+                  "decisionCases": {},
+                  "defaultCase": [],
+                  "forkTasks": [],
+                  "startDelay": 0,
+                  "joinOn": [],
+                  "optional": false,
+                  "defaultExclusiveJoinTask": [],
+                  "asyncComplete": false,
+                  "loopOver": []
+                }
+              ],
+              "EXTRACT": [
+                {
+                  "name": "extract_text_pdf",
+                  "taskReferenceName": "extract_text_pdf_ref",
+                  "inputParameters": {
+                    "input_files": "${workflow.input.operation.input_files}"
+                  },
+                  "type": "SIMPLE",
+                  "decisionCases": {},
+                  "defaultCase": [],
+                  "forkTasks": [],
+                  "startDelay": 0,
+                  "joinOn": [],
+                  "optional": false,
+                  "defaultExclusiveJoinTask": [],
+                  "asyncComplete": false,
+                  "loopOver": []
+                }
+              ]
+            },
+            "defaultCase": [],
+            "forkTasks": [],
+            "startDelay": 0,
+            "joinOn": [],
+            "optional": false,
+            "defaultExclusiveJoinTask": [],
+            "asyncComplete": false,
+            "loopOver": [],
+            "evaluatorType": "javascript",
+            "expression": "function e(){return $.command}e();"
+          }
+        ],
+        "CONVERT": [
+          {
+            "name": "pdf_convert",
+            "taskReferenceName": "pdf_convert_ref",
+            "inputParameters": {
+              "command": "${workflow.input.operation.command}"
+            },
+            "type": "SWITCH",
+            "decisionCases": {
+              "IMAGE": [
+                {
+                  "name": "image_2_pdf",
+                  "taskReferenceName": "image_2_pdf_ref",
+                  "inputParameters": {
+                    "input_files": "${workflow.input.operation.input_files}"
+                  },
+                  "type": "SIMPLE",
+                  "decisionCases": {},
+                  "defaultCase": [],
+                  "forkTasks": [],
+                  "startDelay": 0,
+                  "joinOn": [],
+                  "optional": false,
+                  "defaultExclusiveJoinTask": [],
+                  "asyncComplete": false,
+                  "loopOver": []
+                }
+              ]
+            },
+            "defaultCase": [],
+            "forkTasks": [],
+            "startDelay": 0,
+            "joinOn": [],
+            "optional": false,
+            "defaultExclusiveJoinTask": [],
+            "asyncComplete": false,
+            "loopOver": [],
+            "evaluatorType": "javascript",
+            "expression": "function e(){return $.command}e();"
+          }
+        ]
+      },
+      "defaultCase": [],
+      "forkTasks": [],
+      "startDelay": 0,
+      "joinOn": [],
+      "optional": false,
+      "defaultExclusiveJoinTask": [],
+      "asyncComplete": false,
+      "loopOver": [],
+      "evaluatorType": "javascript",
+      "expression": "function e(){return $.operation}e();"
+    }
+  ],
+  "inputParameters": [],
+  "outputParameters": {},
+  "schemaVersion": 2,
+  "restartable": true,
+  "workflowStatusListenerEnabled": true,
+  "ownerEmail": "ashik9591@gmail.com",
+  "timeoutPolicy": "ALERT_ONLY",
+  "timeoutSeconds": 0,
+  "variables": {},
+  "inputTemplate": {}
+}
