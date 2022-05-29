@@ -5,7 +5,7 @@
 When sending documents over the internet, the most preferred type is PDF. So there is a growing demand for operations over PDF. Although there are plenty of online tools that does PDF operations. When it comes to integrating these operations as part of 
 a flow it requires a lot of effort in finding the right libraries and scaling the operations. 
 
-Thus, this workflow when integrated into any system, makes the system capable of doing PDF operations on the go without worrying about scaling or development. This workflow currently uses base64 strings as input and output so there is no need for any external storage systems or CDN's
+Thus, this workflow when integrated into any system, makes the system capable of doing PDF operations on the go without worrying about scaling or development. This workflow currently uses `base64` strings as input and output so there is no need for any external storage systems or CDN's
 for storing files. There are a lot of practical applications for this workflow which includes but not limited to :
 
 1. Enable authors to embed user specific watermarks to their PDF files uploaded to an Ebook Sharing Site.
@@ -158,3 +158,10 @@ Successful execution of a PDF merge operation
 ![img.png](screenshots/screenshot_2.png)
 
 Input and output of a successful execution of a PDF merge operation
+
+## Future Scope
+
+- Add support for more operations like split, create, etc.
+- Add support for specifying compress parameters.
+- Support input files as CDN urls.
+- Upload output file to a CDN.
