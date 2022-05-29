@@ -148,3 +148,13 @@ Output
 ## Flow Diagram
 
 ![img.png](screenshots/img.png)
+
+## Screenshots
+
+![img.png](screenshots/screenshot_1.png)
+
+Successful execution of a PDF merge operation
+
+![img.png](screenshots/screenshot_2.png)
+
+Input and output of a successful execution of a PDF merge operation
